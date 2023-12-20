@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.bestbuy.com/"/>
+  <test thread-count="5" name="Test(failed)" verbose="2">
+    <classes>
+      <class name="testcase.TC008_MenuTitles">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="browserLaunch"/>
+          <include name="menuTest" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcase.TC008_MenuTitles -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

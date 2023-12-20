@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2"> 
+<listeners>
+<listener class-name="utility.Listner"></listener>
+</listeners>
+  <parameter name="url" value="https://www.bestbuy.com/"></parameter>
+ 
+  <test thread-count="3" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+       <class name="testcase.TC001_ChooseCountry"/>  
+       <class name="testcase.TC002_Register"/>  
+       <class name="testcase.TC003_RegisterNega"/>  
+       <class name="testcase.TC004_SignIn"/>  
+       <class name="testcase.TC005_SignInNega"/>  
+       <class name="testcase.TC008_MenuTitles"/>        
+       <class name="testcase.TC009_AddItem"/> 
+       <class name="testcase.TC010_SaveAnItem"/>   
+       <class name="testcase.TC012_RemoveAnItem"/> 
+       <class name="testcase.TC013_ForgetPassword"/> 
+                                                    
+    </classes>
+  </test> <!-- Test -->  
+  
+  <test thread-count="3" name="EdgeTest">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>      
+       <class name="testcase.TC006_BrokenLink"/>  
+       <class name="testcase.TC007_BottomLink"/>           
+       <class name="testcase.TC011_HeadlessBrowser"/>  
+       <class name="testcase.TC014_FilterAnItem"/>                                              
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
